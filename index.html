@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="L'Âme Verte - Cultivez votre passion du jardinage avec nos conseils d'experts et notre sélection de plantes">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Accueil - L'Âme Verte</title>
+</head>
+<body>
+  
+  <!-- HEADER UNIFIÉ -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="assets/img/Logo.jpg" alt="Logo L'Âme Verte" class="logo">
+        <h1 class="site-title">L'Âme Verte</h1>
+      </div>
+      
+      <!-- Checkbox cachée pour le menu déroulant (CSS pur) -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      
+      <!-- Label qui sert de bouton hamburger -->
+      <label for="menu-toggle" class="menu-toggle" aria-label="Menu de navigation">☰</label>
+      
+      <nav class="navbar" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Section Hero -->
+      <section class="cultiver">
+        <div class="image-container">
+          <img src="assets/img/accueil.jpg" alt="Jardin verdoyant" class="hero-image">
+          <div class="hero-overlay">
+            <h2>Cultivez votre passion du jardinage</h2>
+            <button class="btn-conseil">Découvrir les conseils</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Articles Conseils -->
+      <section class="articles-section">
+        <h2>Conseils du moment</h2>
+        
+        <div class="articles-grid">
+          <article class="article-card">
+            <div class="article-image">
+              <img src="assets/img/conseil1.jpg" alt="Préparer son sol">
+            </div>
+            <div class="article-content">
+              <h3>Préparer son sol au printemps</h3>
+              <p>Conseils essentiels pour un sol vivant et fertile.</p>
+              <a href="#" class="lire-article">Lire l'article</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-image">
+              <img src="assets/img/conseil2.jpg" alt="Installer un compost">
+            </div>
+            <div class="article-content">
+              <h3>Installer un compost</h3>
+              <p>Réduire les déchets et nourrir le sol.</p>
+              <a href="#" class="lire-article">Lire l'article</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-image">
+              <img src="assets/img/conseil3.jpg" alt="Arroser efficacement">
+            </div>
+            <div class="article-content">
+              <h3>Arroser efficacement</h3>
+              <p>Techniques d'économie d'eau et astuces.</p>
+              <a href="#" class="lire-article">Lire l'article</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Section Plantes -->
+        <h2>Nos plantes</h2>
+        
+        <div class="plantes-grid">
+          <article class="plantes-section">
+            <div class="plantes-image">
+              <img src="assets/img/plante1.jpg" alt="Tomate">
+            </div>
+            <div class="plantes-content">
+              <h3>Tomate</h3>
+              <p>5,99 €</p>
+              <button class="btn-panier">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="plantes-section">
+            <div class="plantes-image">
+              <img src="assets/img/plante2.jpg" alt="Basilic">
+            </div>
+            <div class="plantes-content">
+              <h3>Basilic</h3>
+              <p>3,99 €</p>
+              <button class="btn-panier">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="plantes-section">
+            <div class="plantes-image">
+              <img src="assets/img/plante3.jpg" alt="Lavande">
+            </div>
+            <div class="plantes-content">
+              <h3>Lavande</h3>
+              <p>7,99 €</p>
+              <button class="btn-panier">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="plantes-section">
+            <div class="plantes-image">
+              <img src="assets/img/plante4.jpg" alt="Menthe">
+            </div>
+            <div class="plantes-content">
+              <h3>Menthe</h3>
+              <p>4,49 €</p>
+              <button class="btn-panier">Ajouter au panier</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-section">
+          <h3>Rejoignez notre newsletter</h3>
+          <p>Recevez nos meilleurs conseils de jardinage chaque mois</p>
+          <button class="btn-conseil">S'inscrire</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER UNIFIÉ -->
+  <section class="flooter">
+    <footer>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>© L'Âme Verte</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://perpetual-homegrown-6b4.notion.site/Mentions-l-gales-28e49df2d451808f94ffcab6cf647366?pvs=143">Mentions légales</a>
+          <a href="https://perpetual-homegrown-6b4.notion.site/Politique-de-confidentialit-28e49df2d4518018984dd83a6b89c7df?pvs=143">Politique de confidentialité</a>
+          <a href="#">Plan du site</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+</body>
+</html>
