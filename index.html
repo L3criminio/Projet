@@ -27,7 +27,7 @@
       <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Ouvrir ou fermer le menu de navigation" aria-controls="navbar-menu">
 
       <!-- Label qui sert de bouton hamburger -->
-      <label for="menu-toggle" class="menu-toggle" role="button" aria-label="Bouton du menu de navigation" tabindex="0">☰</label>
+      <label for="menu-toggle" class="menu-toggle" aria-label="Bouton du menu de navigation" tabindex="0">☰</label>
 
       <nav class="navbar" role="navigation" aria-label="Navigation principale" id="navbar-menu">
         <ul role="menubar">
@@ -58,8 +58,8 @@
       <section class="articles-section" aria-labelledby="conseils-titre">
         <h2 id="conseils-titre">Conseils du moment</h2>
 
-        <div class="articles-grid" role="list" aria-label="Liste des articles conseils">
-          <article class="article-card" role="listitem" aria-labelledby="article1-titre">
+        <div class="articles-grid" aria-label="Liste des articles conseils">
+          <article class="article-card" aria-labelledby="article1-titre">
             <div class="article-image">
               <img src="assets/img/conseil1.jpg" alt="Photo d'un jardinier préparant le sol au printemps">
             </div>
@@ -70,7 +70,7 @@
             </div>
           </article>
 
-          <article class="article-card" role="listitem" aria-labelledby="article2-titre">
+          <article class="article-card" aria-labelledby="article2-titre">
             <div class="article-image">
               <img src="assets/img/conseil2.jpg" alt="Photo d'un composteur dans un jardin">
             </div>
@@ -81,7 +81,7 @@
             </div>
           </article>
 
-          <article class="article-card" role="listitem" aria-labelledby="article3-titre">
+          <article class="article-card" aria-labelledby="article3-titre">
             <div class="article-image">
               <img src="assets/img/conseil3.jpg" alt="Photo d'un système d'arrosage efficace">
             </div>
@@ -96,8 +96,8 @@
         <!-- Section Plantes -->
         <h2 id="plantes-titre">Nos plantes</h2>
 
-        <div class="plantes-grid" role="list" aria-label="Liste des plantes disponibles à l'achat">
-          <article class="plantes-section" role="listitem" aria-labelledby="plante1-titre">
+        <div class="plantes-grid" aria-label="Liste des plantes disponibles à l'achat">
+          <article class="plantes-section" aria-labelledby="plante1-titre">
             <div class="plantes-image">
               <img src="assets/img/plante1.jpg" alt="Plant de lavande en pot">
             </div>
@@ -108,7 +108,7 @@
             </div>
           </article>
 
-          <article class="plantes-section" role="listitem" aria-labelledby="plante2-titre">
+          <article class="plantes-section" aria-labelledby="plante2-titre">
             <div class="plantes-image">
               <img src="assets/img/plante2.jpg" alt="Plant de basilic en pot">
             </div>
@@ -119,7 +119,7 @@
             </div>
           </article>
 
-          <article class="plantes-section" role="listitem" aria-labelledby="plante3-titre">
+          <article class="plantes-section" aria-labelledby="plante3-titre">
             <div class="plantes-image">
               <img src="assets/img/plante3.jpg" alt="Plant de tomate en pot">
             </div>
@@ -130,7 +130,7 @@
             </div>
           </article>
 
-          <article class="plantes-section" role="listitem" aria-labelledby="plante4-titre">
+          <article class="plantes-section" aria-labelledby="plante4-titre">
             <div class="plantes-image">
               <img src="assets/img/plante4.jpg" alt="Rosier en pot">
             </div>
@@ -142,6 +142,46 @@
           </article>
         </div>
 
+        <!-- CALENDRIER DU JARDINIER -->
+        <section class="calendrier-section" aria-labelledby="calendrier-titre">
+          <div class="calendrier-container">
+            <h2 id="calendrier-titre">Calendrier du jardinier</h2>
+            <div class="calendrier-timeline">
+              <div class="calendrier-item" aria-labelledby="saison-printemps">
+                <div class="calendrier-dot" aria-hidden="true"></div>
+                <div class="calendrier-content">
+                  <h3 id="saison-printemps">Printemps</h3>
+                  <p>Plantation et semis</p>
+                </div>
+              </div>
+              <div class="calendrier-line" aria-hidden="true"></div>
+              <div class="calendrier-item" aria-labelledby="saison-ete">
+                <div class="calendrier-dot" aria-hidden="true"></div>
+                <div class="calendrier-content">
+                  <h3 id="saison-ete">Été</h3>
+                  <p>Arrosage et entretien</p>
+                </div>
+              </div>
+              <div class="calendrier-line" aria-hidden="true"></div>
+              <div class="calendrier-item" aria-labelledby="saison-automne">
+                <div class="calendrier-dot" aria-hidden="true"></div>
+                <div class="calendrier-content">
+                  <h3 id="saison-automne">Automne</h3>
+                  <p>Récolte et compost</p>
+                </div>
+              </div>
+              <div class="calendrier-line" aria-hidden="true"></div>
+              <div class="calendrier-item" aria-labelledby="saison-hiver">
+                <div class="calendrier-dot" aria-hidden="true"></div>
+                <div class="calendrier-content">
+                  <h3 id="saison-hiver">Hiver</h3>
+                  <p>Protection et planification</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Newsletter -->
         <aside class="newsletter-section" aria-labelledby="newsletter-titre">
           <h3 id="newsletter-titre">Rejoignez notre newsletter</h3>
@@ -151,46 +191,6 @@
       </section>
     </div>
   </main>
-
-  <!-- CALENDRIER DU JARDINIER -->
-  <section class="calendrier-section" aria-labelledby="calendrier-titre">
-    <div class="calendrier-container">
-      <h2 id="calendrier-titre">Calendrier du jardinier</h2>
-      <div class="calendrier-timeline">
-        <div class="calendrier-item" aria-labelledby="saison-printemps">
-          <div class="calendrier-dot" aria-hidden="true"></div>
-          <div class="calendrier-content">
-            <h3 id="saison-printemps">Printemps</h3>
-            <p>Plantation et semis</p>
-          </div>
-        </div>
-        <div class="calendrier-line" aria-hidden="true"></div>
-        <div class="calendrier-item" aria-labelledby="saison-ete">
-          <div class="calendrier-dot" aria-hidden="true"></div>
-          <div class="calendrier-content">
-            <h3 id="saison-ete">Été</h3>
-            <p>Arrosage et entretien</p>
-          </div>
-        </div>
-        <div class="calendrier-line" aria-hidden="true"></div>
-        <div class="calendrier-item" aria-labelledby="saison-automne">
-          <div class="calendrier-dot" aria-hidden="true"></div>
-          <div class="calendrier-content">
-            <h3 id="saison-automne">Automne</h3>
-            <p>Récolte et compost</p>
-          </div>
-        </div>
-        <div class="calendrier-line" aria-hidden="true"></div>
-        <div class="calendrier-item" aria-labelledby="saison-hiver">
-          <div class="calendrier-dot" aria-hidden="true"></div>
-          <div class="calendrier-content">
-            <h3 id="saison-hiver">Hiver</h3>
-            <p>Protection et planification</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
 
