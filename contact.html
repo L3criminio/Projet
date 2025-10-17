@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contactez L'Âme Verte pour tous vos projets de jardinage et d'aménagement paysager">
+  <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/img/logo.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Contact - L'Âme Verte</title>
 </head>
+
 <body>
-  
+
   <!-- HEADER UNIFIÉ -->
   <header class="header" role="banner">
     <div class="header-container">
-      <div class="logo-container">
-        <img src="assets/img/logo.jpg" alt="Logo L'Âme Verte - Retour à l'accueil" class="logo">
+      <a href="index.html" class="logo-container" aria-label="Retour à la page d'accueil">
+        <img src="assets/img/logo.jpg" alt="Logo L'Âme Verte" class="logo">
         <h1 class="site-title">L'Âme Verte</h1>
-      </div>
+      </a>
 
       <!-- Checkbox cachée pour le menu déroulant (CSS pur) -->
-      <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Ouvrir ou fermer le menu de navigation" aria-controls="navbar-menu">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Ouvrir ou fermer le menu de navigation"
+        aria-controls="navbar-menu">
 
       <!-- Label qui sert de bouton hamburger -->
-      <label for="menu-toggle" class="menu-toggle" role="button" aria-label="Bouton du menu de navigation" tabindex="0">☰</label>
+      <label for="menu-toggle" class="menu-toggle" role="button" aria-label="Bouton du menu de navigation"
+        tabindex="0">☰</label>
 
       <nav class="navbar" role="navigation" aria-label="Navigation principale" id="navbar-menu">
         <ul role="menubar">
@@ -81,23 +87,29 @@
             <input type="checkbox" id="rgpd" name="rgpd" required aria-required="true">
             <label for="rgpd">
               J'accepte que mes données soient utilisées pour me recontacter.
-              Consultez notre <a href="https://perpetual-homegrown-6b4.notion.site/Politique-de-confidentialit-28e49df2d4518018984dd83a6b89c7df?pvs=143" target="_blank" rel="noopener noreferrer" aria-label="Consulter la politique de confidentialité (s'ouvre dans un nouvel onglet)">politique de confidentialité</a>.
+              Consultez notre <a
+                href="https://perpetual-homegrown-6b4.notion.site/Politique-de-confidentialit-28e49df2d4518018984dd83a6b89c7df?pvs=143"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Consulter la politique de confidentialité (s'ouvre dans un nouvel onglet)">politique de
+                confidentialité</a>.
             </label>
           </div>
 
-          <button type="submit" class="submit-btn" aria-label="Envoyer le formulaire de contact">Envoyer le message</button>
+          <button type="submit" class="submit-btn" aria-label="Envoyer le formulaire de contact">Envoyer le
+            message</button>
 
         </form>
       </section>
 
       <!-- Informations de contact -->
-      <aside class="contact-info" role="complementary" aria-labelledby="info-titre">
+      <aside class="contact-info" aria-labelledby="info-titre">
         <h2 id="info-titre" class="visually-hidden">Informations de contact</h2>
 
         <div class="info-card" aria-labelledby="info-email-titre">
           <div class="icon" aria-hidden="true">📧</div>
           <h3 id="info-email-titre">Email</h3>
-          <p><a href="mailto:contact@ameverte.fr" aria-label="Envoyer un email à contact@ameverte.fr">contact@ameverte.fr</a></p>
+          <p><a href="mailto:contact@ameverte.fr"
+              aria-label="Envoyer un email à contact@ameverte.fr">contact@ameverte.fr</a></p>
         </div>
 
         <div class="info-card" aria-labelledby="info-tel-titre">
@@ -120,18 +132,21 @@
   </main>
 
   <!-- FOOTER UNIFIÉ -->
-    <footer class="flooter" role="contentinfo">
-      <div class="footer-bottom">
-        <div class="footer-bottom-left">
-          <span>&copy; L'Âme Verte</span>
-        </div>
-        <nav class="footer-links" role="navigation" aria-label="Navigation secondaire - liens légaux">
-          <a href="https://perpetual-homegrown-6b4.notion.site/Mentions-l-gales-28e49df2d451808f94ffcab6cf647366?pvs=143" aria-label="Consulter les mentions légales">Mentions légales</a>
-          <a href="https://perpetual-homegrown-6b4.notion.site/Politique-de-confidentialit-28e49df2d4518018984dd83a6b89c7df?pvs=143" aria-label="Consulter la politique de confidentialité">Politique de confidentialité</a>
-          <a href="#" aria-label="Consulter le plan du site">Plan du site</a>
-        </nav>
+  <footer class="flooter" role="contentinfo">
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span>&copy; L'Âme Verte</span>
       </div>
-    </footer>
+      <nav class="footer-links" role="navigation" aria-label="Navigation secondaire - liens légaux">
+        <a href="https://perpetual-homegrown-6b4.notion.site/Mentions-l-gales-28e49df2d451808f94ffcab6cf647366?pvs=143"
+          aria-label="Consulter les mentions légales">Mentions légales</a>
+        <a href="https://perpetual-homegrown-6b4.notion.site/Politique-de-confidentialit-28e49df2d4518018984dd83a6b89c7df?pvs=143"
+          aria-label="Consulter la politique de confidentialité">Politique de confidentialité</a>
+        <a href="#" aria-label="Consulter le plan du site">Plan du site</a>
+      </nav>
+    </div>
+  </footer>
 
 </body>
+
 </html>
