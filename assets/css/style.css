@@ -799,6 +799,7 @@ input[type="checkbox"] {
   background: #ffffff;
   border-top: 1px solid #e0e0e0;
   margin-top: auto;
+  width: 100vw;
 }
 
 footer {
