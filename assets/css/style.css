@@ -4,7 +4,9 @@
 :root {
   /* Couleurs */
   --vert-principal: #547D57;
-  --vert-hover: #4a7c2c;
+  --vert-hover: #3d6624;
+  --vert-bouton: #2d5016;
+  --vert-bouton-hover: #1f3a0f;
   --beige-clair: #F5F3EE;
   --brun-doux: #3C2F2F;
   --blanc: #FFFFFF;
@@ -288,7 +290,7 @@ button {
 }
 
 .btn-conseil {
-  background-color: #4CAF50;
+  background-color: var(--vert-bouton);
   color: white;
   border: none;
   padding: 12px 30px;
@@ -301,7 +303,7 @@ button {
 }
 
 .btn-conseil:hover {
-  background-color: #45a049;
+  background-color: var(--vert-bouton-hover);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
@@ -382,7 +384,7 @@ button {
 }
 
 .lire-article {
-  color: #4CAF50;
+  color: var(--vert-bouton);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -391,7 +393,7 @@ button {
 }
 
 .lire-article:hover {
-  color: #45a049;
+  color: var(--vert-bouton-hover);
   text-decoration: underline;
 }
 
@@ -437,7 +439,7 @@ button {
 }
 
 .plantes-section p {
-  color: #4CAF50;
+  color: var(--vert-bouton);
   font-size: 1rem;
   line-height: 1.4;
   margin-bottom: 0;
@@ -445,7 +447,7 @@ button {
 }
 
 .btn-panier {
-  background-color: #4CAF50;
+  background-color: var(--vert-bouton);
   color: white;
   border: none;
   padding: 10px 0;
@@ -459,7 +461,7 @@ button {
 }
 
 .btn-panier:hover {
-  background-color: #45a049;
+  background-color: var(--vert-bouton-hover);
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -668,8 +670,8 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-  border-color: #4a7c2c;
-  box-shadow: 0 0 0 3px rgba(74, 124, 44, 0.1);
+  border-color: var(--vert-bouton);
+  box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
 }
 
 textarea {
@@ -692,7 +694,7 @@ input[type="checkbox"] {
   height: 20px;
   margin-top: 2px;
   cursor: pointer;
-  accent-color: #4a7c2c;
+  accent-color: var(--vert-bouton);
   flex-shrink: 0;
 }
 
@@ -705,7 +707,7 @@ input[type="checkbox"] {
 }
 
 .checkbox-group label a {
-  color: #4a7c2c;
+  color: var(--vert-bouton);
   text-decoration: none;
   font-weight: 600;
 }
@@ -717,7 +719,7 @@ input[type="checkbox"] {
 .submit-btn {
   width: 100%;
   padding: 16px;
-  background: #4a7c2c;
+  background: var(--vert-bouton);
   color: white;
   border: none;
   border-radius: 8px;
@@ -728,9 +730,9 @@ input[type="checkbox"] {
 }
 
 .submit-btn:hover {
-  background: #3d6624;
+  background: var(--vert-bouton-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(74, 124, 44, 0.3);
+  box-shadow: 0 6px 20px rgba(45, 80, 22, 0.3);
 }
 
 .submit-btn:active {
@@ -774,7 +776,7 @@ input[type="checkbox"] {
 }
 
 .info-card a {
-  color: #4a7c2c;
+  color: var(--vert-bouton);
   text-decoration: none;
   font-weight: 600;
 }
@@ -827,14 +829,14 @@ footer {
 }
 
 .footer-links a {
-  color: #4a7c2c;
+  color: var(--vert-bouton);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #2d5016;
+  color: var(--vert-bouton-hover);
   text-decoration: underline;
 }
 
