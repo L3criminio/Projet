@@ -10,153 +10,153 @@
 <body>
   
   <!-- HEADER UNIFIÉ -->
-  <header class="header">
+  <header class="header" role="banner">
     <div class="header-container">
       <div class="logo-container">
-        <img src="assets/img/logo.jpg" alt="Logo L'Âme Verte" class="logo">
+        <img src="assets/img/logo.jpg" alt="Logo L'Âme Verte - Retour à l'accueil" class="logo">
         <h1 class="site-title">L'Âme Verte</h1>
       </div>
-      
+
       <!-- Checkbox cachée pour le menu déroulant -->
-      <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Menu déroulant">
-      
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Ouvrir ou fermer le menu de navigation" aria-controls="navbar-menu">
+
       <!-- Label qui sert de bouton hamburger -->
-      <label for="menu-toggle" class="menu-toggle" aria-label="Menu de navigation">☰</label>
-      
-      <nav class="navbar" aria-label="Navigation principale">
-        <ul>
-          <li><a href="index.html" aria-current="page">Accueil</a></li>
-          <li><a href="equipe.html">Équipe</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <label for="menu-toggle" class="menu-toggle" role="button" aria-label="Bouton du menu de navigation" tabindex="0">☰</label>
+
+      <nav class="navbar" role="navigation" aria-label="Navigation principale" id="navbar-menu">
+        <ul role="menubar">
+          <li role="none"><a href="index.html" role="menuitem" aria-current="page">Accueil</a></li>
+          <li role="none"><a href="equipe.html" role="menuitem">Équipe</a></li>
+          <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="main-content">
+  <main class="main-content" role="main" id="contenu-principal">
     <div class="container">
-      
+
       <!-- Section Hero -->
-      <section class="cultiver">
+      <section class="cultiver" aria-labelledby="hero-titre">
         <div class="image-container">
-          <img src="assets/img/accueil.jpg" alt="Jardin verdoyant" class="hero-image">
+          <img src="assets/img/accueil.jpg" alt="Jardin verdoyant avec des fleurs colorées" class="hero-image">
           <div class="hero-overlay">
-            <h2>Cultivez votre passion du jardinage</h2>
-            <button class="btn-conseil">Découvrir les conseils</button>
+            <h2 id="hero-titre">Cultivez votre passion du jardinage</h2>
+            <button class="btn-conseil" aria-label="Découvrir nos conseils de jardinage">Découvrir les conseils</button>
           </div>
         </div>
       </section>
 
       <!-- Section Articles Conseils -->
-      <section class="articles-section">
-        <h2>Conseils du moment</h2>
-        
-        <div class="articles-grid">
-          <article class="article-card">
+      <section class="articles-section" aria-labelledby="conseils-titre">
+        <h2 id="conseils-titre">Conseils du moment</h2>
+
+        <div class="articles-grid" role="list" aria-label="Liste des articles conseils">
+          <article class="article-card" role="listitem" aria-labelledby="article1-titre">
             <div class="article-image">
-              <img src="assets/img/conseil1.jpg" alt="Préparer son sol">
+              <img src="assets/img/conseil1.jpg" alt="Photo d'un jardinier préparant le sol au printemps">
             </div>
             <div class="article-content">
-              <h3>Préparer son sol au printemps</h3>
+              <h3 id="article1-titre">Préparer son sol au printemps</h3>
               <p>Conseils essentiels pour un sol vivant et fertile.</p>
-              <a href="#" class="lire-article">Lire l'article</a>
+              <a href="#" class="lire-article" aria-label="Lire l'article sur la préparation du sol au printemps">Lire l'article</a>
             </div>
           </article>
 
-          <article class="article-card">
+          <article class="article-card" role="listitem" aria-labelledby="article2-titre">
             <div class="article-image">
-              <img src="assets/img/conseil2.jpg" alt="Installer un compost">
+              <img src="assets/img/conseil2.jpg" alt="Photo d'un composteur dans un jardin">
             </div>
             <div class="article-content">
-              <h3>Installer un compost</h3>
+              <h3 id="article2-titre">Installer un compost</h3>
               <p>Réduire les déchets et nourrir le sol.</p>
-              <a href="#" class="lire-article">Lire l'article</a>
+              <a href="#" class="lire-article" aria-label="Lire l'article sur l'installation d'un compost">Lire l'article</a>
             </div>
           </article>
 
-          <article class="article-card">
+          <article class="article-card" role="listitem" aria-labelledby="article3-titre">
             <div class="article-image">
-              <img src="assets/img/conseil3.jpg" alt="Arroser efficacement">
+              <img src="assets/img/conseil3.jpg" alt="Photo d'un système d'arrosage efficace">
             </div>
             <div class="article-content">
-              <h3>Arroser efficacement</h3>
+              <h3 id="article3-titre">Arroser efficacement</h3>
               <p>Techniques d'économie d'eau et astuces.</p>
-              <a href="#" class="lire-article">Lire l'article</a>
+              <a href="#" class="lire-article" aria-label="Lire l'article sur l'arrosage efficace">Lire l'article</a>
             </div>
           </article>
         </div>
 
         <!-- Section Plantes -->
-        <h2>Nos plantes</h2>
-        
-        <div class="plantes-grid">
-          <article class="plantes-section">
+        <h2 id="plantes-titre">Nos plantes</h2>
+
+        <div class="plantes-grid" role="list" aria-label="Liste des plantes disponibles à l'achat">
+          <article class="plantes-section" role="listitem" aria-labelledby="plante1-titre">
             <div class="plantes-image">
-              <img src="assets/img/plante1.jpg" alt="Tomate">
+              <img src="assets/img/plante1.jpg" alt="Plant de lavande en pot">
             </div>
             <div class="plantes-content">
-              <h3>Lavande</h3>
-              <p>5,99 €</p>
-              <button class="btn-panier">Ajouter au panier</button>
+              <h3 id="plante1-titre">Lavande</h3>
+              <p aria-label="Prix : 5 euros 99 centimes">5,99 €</p>
+              <button class="btn-panier" aria-label="Ajouter Lavande au panier, prix 5,99 euros">Ajouter au panier</button>
             </div>
           </article>
 
-          <article class="plantes-section">
+          <article class="plantes-section" role="listitem" aria-labelledby="plante2-titre">
             <div class="plantes-image">
-              <img src="assets/img/plante2.jpg" alt="Basilic">
+              <img src="assets/img/plante2.jpg" alt="Plant de basilic en pot">
             </div>
             <div class="plantes-content">
-              <h3>Basilic</h3>
-              <p>3,99 €</p>
-              <button class="btn-panier">Ajouter au panier</button>
+              <h3 id="plante2-titre">Basilic</h3>
+              <p aria-label="Prix : 3 euros 99 centimes">3,99 €</p>
+              <button class="btn-panier" aria-label="Ajouter Basilic au panier, prix 3,99 euros">Ajouter au panier</button>
             </div>
           </article>
 
-          <article class="plantes-section">
+          <article class="plantes-section" role="listitem" aria-labelledby="plante3-titre">
             <div class="plantes-image">
-              <img src="assets/img/plante3.jpg" alt="Lavande">
+              <img src="assets/img/plante3.jpg" alt="Plant de tomate en pot">
             </div>
             <div class="plantes-content">
-              <h3>Tomate</h3>
-              <p>7,99 €</p>
-              <button class="btn-panier">Ajouter au panier</button>
+              <h3 id="plante3-titre">Tomate</h3>
+              <p aria-label="Prix : 7 euros 99 centimes">7,99 €</p>
+              <button class="btn-panier" aria-label="Ajouter Tomate au panier, prix 7,99 euros">Ajouter au panier</button>
             </div>
           </article>
 
-          <article class="plantes-section">
+          <article class="plantes-section" role="listitem" aria-labelledby="plante4-titre">
             <div class="plantes-image">
-              <img src="assets/img/plante4.jpg" alt="Menthe">
+              <img src="assets/img/plante4.jpg" alt="Rosier en pot">
             </div>
             <div class="plantes-content">
-              <h3>Rose</h3>
-              <p>4,49 €</p>
-              <button class="btn-panier">Ajouter au panier</button>
+              <h3 id="plante4-titre">Rose</h3>
+              <p aria-label="Prix : 4 euros 49 centimes">4,49 €</p>
+              <button class="btn-panier" aria-label="Ajouter Rose au panier, prix 4,49 euros">Ajouter au panier</button>
             </div>
           </article>
         </div>
 
         <!-- Newsletter -->
-        <div class="newsletter-section">
-          <h3>Rejoignez notre newsletter</h3>
+        <aside class="newsletter-section" role="complementary" aria-labelledby="newsletter-titre">
+          <h3 id="newsletter-titre">Rejoignez notre newsletter</h3>
           <p>Recevez nos meilleurs conseils de jardinage chaque mois</p>
-          <button class="btn-conseil">S'inscrire</button>
-        </div>
+          <button class="btn-conseil" aria-label="S'inscrire à la newsletter">S'inscrire</button>
+        </aside>
       </section>
     </div>
   </main>
 
   <!-- FOOTER UNIFIÉ -->
-  <footer class="flooter">
+  <footer class="flooter" role="contentinfo">
       <div class="footer-bottom">
         <div class="footer-bottom-left">
-          <span>© L'Âme Verte</span>
+          <span>&copy; L'Âme Verte</span>
         </div>
-        <div class="footer-links">
-          <a href="https://perpetual-homegrown-6b4.notion.site/Mentions-l-gales-28e49df2d451808f94ffcab6cf647366?pvs=143">Mentions légales</a>
-          <a href="https://perpetual-homegrown-6b4.notion.site/Politique-de-confidentialit-28e49df2d4518018984dd83a6b89c7df?pvs=143">Politique de confidentialité</a>
-          <a href="#">Plan du site</a>
-        </div>
+        <nav class="footer-links" role="navigation" aria-label="Navigation secondaire - liens légaux">
+          <a href="https://perpetual-homegrown-6b4.notion.site/Mentions-l-gales-28e49df2d451808f94ffcab6cf647366?pvs=143" aria-label="Consulter les mentions légales">Mentions légales</a>
+          <a href="https://perpetual-homegrown-6b4.notion.site/Politique-de-confidentialit-28e49df2d4518018984dd83a6b89c7df?pvs=143" aria-label="Consulter la politique de confidentialité">Politique de confidentialité</a>
+          <a href="#" aria-label="Consulter le plan du site">Plan du site</a>
+        </nav>
       </div>
     </footer>
 </body>
